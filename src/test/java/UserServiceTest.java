@@ -63,6 +63,7 @@ public class UserServiceTest {
             userService.saveUser(testName, testLastName, testAge);
             userService.removeUserById(1L);
         } catch (Exception e) {
+            e.printStackTrace();
             Assert.fail("При тестировании удаления пользователя по id произошло исключение\n" + e);
         }
     }
